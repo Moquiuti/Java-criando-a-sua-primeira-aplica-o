@@ -70,11 +70,22 @@ Ao concluir este curso, serei capaz de:
 
 ```
 📦 Java-criando-a-sua-primeira-aplica-o
- ┣ 📂 src/
- ┃ ┣ 📜 Perfil.java       # Classe com cumprimentos personalizados
- ┃ ┣ 📜 Estudos.java      # Classe com anotações de estudo
- ┃ ┣ 📜 Soma.java         # Classe que imprime 10 + 5
- ┃ ┗ 📜 Subtracao.java    # Classe que imprime 10 - 5
+ ┣ 📂 camada sessão 1/
+ ┃ ┣ 📂 src/
+ ┃ ┃ ┣ 📜 Perfil.java
+ ┃ ┃ ┣ 📜 Estudos.java
+ ┃ ┃ ┣ 📜 Soma.java
+ ┃ ┃ ┗ 📜 Subtracao.java
+ ┃ ┗ 📜 README.md
+ ┣ 📂 camada sessão 2/
+ ┃ ┣ 📂 src/
+ ┃ ┃ ┣ 📜 Media.java
+ ┃ ┃ ┣ 📜 Casting.java
+ ┃ ┃ ┣ 📜 Palavras.java
+ ┃ ┃ ┣ 📜 Produto.java
+ ┃ ┃ ┣ 📜 ConversaoDolaresReais.java
+ ┃ ┃ ┗ 📜 CalculoDesconto.java
+ ┃ ┗ 📜 README.md
  ┣ 📜 .gitignore          # Arquivos ignorados pelo Git
  ┣ 📜 README.md           # Documentação do projeto
 ```
@@ -83,12 +94,18 @@ Ao concluir este curso, serei capaz de:
 
 ## ✅ Classes já Implementadas
 
-- `Perfil`: imprime duas mensagens no console:
+- `camada sessão 1/src/Perfil.java`: imprime duas mensagens no console:
   - `Ola, Leandro!`
   - `Tudo bem?`
-- `Estudos`: imprime anotações de estudo no console
-- `Soma`: imprime o resultado de `10 + 5` (saída: `15`)
-- `Subtracao`: imprime o resultado de `10 - 5` (saída: `5`)
+- `camada sessão 1/src/Estudos.java`: imprime anotações de estudo no console
+- `camada sessão 1/src/Soma.java`: imprime o resultado de `10 + 5` (saída: `15`)
+- `camada sessão 1/src/Subtracao.java`: imprime o resultado de `10 - 5` (saída: `5`)
+- `camada sessão 2/src/Media.java`: calcula a média de duas notas decimais
+- `camada sessão 2/src/Casting.java`: converte um valor `double` para `int` com casting explícito
+- `camada sessão 2/src/Palavras.java`: concatena uma variável `char` com uma variável `String`
+- `camada sessão 2/src/Produto.java`: calcula valor total com preço e quantidade
+- `camada sessão 2/src/ConversaoDolaresReais.java`: converte dólar para real com cotação fixa
+- `camada sessão 2/src/CalculoDesconto.java`: calcula novo preço com desconto percentual
 
 ---
 
@@ -105,14 +122,21 @@ git clone https://github.com/Moquiuti/Java-criando-a-sua-primeira-aplica-o.git
 
 # 2. Abra o projeto na IntelliJ IDEA
 
-# 3. Compile as classes
-javac src\*.java
+# 3. Execute a camada sessão 1
+javac (Get-ChildItem "camada sessão 1\src\*.java").FullName
+java -cp "camada sessão 1\src" Perfil
+java -cp "camada sessão 1\src" Estudos
+java -cp "camada sessão 1\src" Soma
+java -cp "camada sessão 1\src" Subtracao
 
-# 4. Execute uma classe por vez
-java -cp src Perfil
-java -cp src Estudos
-java -cp src Soma
-java -cp src Subtracao
+# 4. Execute a camada sessão 2
+javac (Get-ChildItem "camada sessão 2\src\*.java").FullName
+java -cp "camada sessão 2\src" Media
+java -cp "camada sessão 2\src" Casting
+java -cp "camada sessão 2\src" Palavras
+java -cp "camada sessão 2\src" Produto
+java -cp "camada sessão 2\src" ConversaoDolaresReais
+java -cp "camada sessão 2\src" CalculoDesconto
 ```
 
 ---
@@ -123,7 +147,7 @@ java -cp src Subtracao
 |--------|----------|--------|
 | 1 | Preparando o ambiente | ✅ |
 | 2 | O primeiro programa | ✅ |
-| 3 | Desvendando o arquivo `.class` | 🔄 |
+| 3 | Desvendando o arquivo `.class` | ✅ |
 | 4 | Construindo o catálogo de filmes | 🔄 |
 | 5 | Controlando o fluxo da aplicação | 🔄 |
 | 6 | Consolidando conhecimentos | 🔄 |
