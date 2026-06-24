@@ -86,6 +86,15 @@ Ao concluir este curso, serei capaz de:
  ┃ ┃ ┣ 📜 ConversaoDolaresReais.java
  ┃ ┃ ┗ 📜 CalculoDesconto.java
  ┃ ┗ 📜 README.md
+ ┣ 📂 camada sessão 3/
+ ┃ ┣ 📂 src/
+ ┃ ┃ ┣ 📜 SinalDoNumero.java
+ ┃ ┃ ┣ 📜 QuemEOMaior.java
+ ┃ ┃ ┣ 📜 AreaEmCena.java
+ ┃ ┃ ┣ 📜 TabuadaDoDia.java
+ ┃ ┃ ┣ 📜 ParOuImpar.java
+ ┃ ┃ ┗ 📜 FatorialEmAcao.java
+ ┃ ┗ 📜 README.md
  ┣ 📜 .gitignore          # Arquivos ignorados pelo Git
  ┣ 📜 README.md           # Documentação do projeto
 ```
@@ -106,6 +115,12 @@ Ao concluir este curso, serei capaz de:
 - `camada sessão 2/src/Produto.java`: calcula valor total com preço e quantidade
 - `camada sessão 2/src/ConversaoDolaresReais.java`: converte dólar para real com cotação fixa
 - `camada sessão 2/src/CalculoDesconto.java`: calcula novo preço com desconto percentual
+- `camada sessão 3/src/SinalDoNumero.java`: classifica um número como positivo ou negativo
+- `camada sessão 3/src/QuemEOMaior.java`: compara dois inteiros e informa a relação entre eles
+- `camada sessão 3/src/AreaEmCena.java`: calcula área de quadrado ou círculo via menu
+- `camada sessão 3/src/TabuadaDoDia.java`: imprime a tabuada de 1 a 10
+- `camada sessão 3/src/ParOuImpar.java`: verifica se o número é par ou ímpar
+- `camada sessão 3/src/FatorialEmAcao.java`: calcula o fatorial usando estrutura de repetição
 
 ---
 
@@ -137,6 +152,15 @@ java -cp "camada sessão 2\src" Palavras
 java -cp "camada sessão 2\src" Produto
 java -cp "camada sessão 2\src" ConversaoDolaresReais
 java -cp "camada sessão 2\src" CalculoDesconto
+
+# 5. Execute a camada sessão 3
+javac (Get-ChildItem "camada sessão 3\src\*.java").FullName
+java -cp "camada sessão 3\src" SinalDoNumero
+java -cp "camada sessão 3\src" QuemEOMaior
+java -cp "camada sessão 3\src" AreaEmCena
+java -cp "camada sessão 3\src" TabuadaDoDia
+java -cp "camada sessão 3\src" ParOuImpar
+java -cp "camada sessão 3\src" FatorialEmAcao
 ```
 
 ---
@@ -149,7 +173,7 @@ java -cp "camada sessão 2\src" CalculoDesconto
 | 2 | O primeiro programa | ✅ |
 | 3 | Desvendando o arquivo `.class` | ✅ |
 | 4 | Construindo o catálogo de filmes | 🔄 |
-| 5 | Controlando o fluxo da aplicação | 🔄 |
+| 5 | Controlando o fluxo da aplicação | ✅ |
 | 6 | Consolidando conhecimentos | 🔄 |
 
 > Legenda: ✅ Concluído | 🔄 Em andamento | ⏳ Pendente
