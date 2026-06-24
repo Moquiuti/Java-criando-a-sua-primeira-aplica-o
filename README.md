@@ -71,9 +71,24 @@ Ao concluir este curso, serei capaz de:
 ```
 📦 Java-criando-a-sua-primeira-aplica-o
  ┣ 📂 src/
- ┃ ┗ 📜 Main.java         # Arquivo principal da aplicação
+ ┃ ┣ 📜 Perfil.java       # Classe com cumprimentos personalizados
+ ┃ ┣ 📜 Estudos.java      # Classe com anotações de estudo
+ ┃ ┣ 📜 Soma.java         # Classe que imprime 10 + 5
+ ┃ ┗ 📜 Subtracao.java    # Classe que imprime 10 - 5
+ ┣ 📜 .gitignore          # Arquivos ignorados pelo Git
  ┣ 📜 README.md           # Documentação do projeto
 ```
+
+---
+
+## ✅ Classes já Implementadas
+
+- `Perfil`: imprime duas mensagens no console:
+  - `Ola, Leandro!`
+  - `Tudo bem?`
+- `Estudos`: imprime anotações de estudo no console
+- `Soma`: imprime o resultado de `10 + 5` (saída: `15`)
+- `Subtracao`: imprime o resultado de `10 - 5` (saída: `5`)
 
 ---
 
@@ -84,13 +99,20 @@ Ao concluir este curso, serei capaz de:
 - [IntelliJ IDEA](https://www.jetbrains.com/idea/download/) (ou outra IDE de sua preferência)
 
 ### Passos
-```bash
+```powershell
 # 1. Clone o repositório
 git clone https://github.com/Moquiuti/Java-criando-a-sua-primeira-aplica-o.git
 
 # 2. Abra o projeto na IntelliJ IDEA
 
-# 3. Execute o arquivo Main.java
+# 3. Compile as classes
+javac src\*.java
+
+# 4. Execute uma classe por vez
+java -cp src Perfil
+java -cp src Estudos
+java -cp src Soma
+java -cp src Subtracao
 ```
 
 ---
@@ -99,12 +121,12 @@ git clone https://github.com/Moquiuti/Java-criando-a-sua-primeira-aplica-o.git
 
 | Módulo | Conteúdo | Status |
 |--------|----------|--------|
-| 1 | Preparando o ambiente | ⏳ |
-| 2 | O primeiro programa | ⏳ |
-| 3 | Desvendando o arquivo `.class` | ⏳ |
-| 4 | Construindo o catálogo de filmes | ⏳ |
-| 5 | Controlando o fluxo da aplicação | ⏳ |
-| 6 | Consolidando conhecimentos | ⏳ |
+| 1 | Preparando o ambiente | ✅ |
+| 2 | O primeiro programa | ✅ |
+| 3 | Desvendando o arquivo `.class` | 🔄 |
+| 4 | Construindo o catálogo de filmes | 🔄 |
+| 5 | Controlando o fluxo da aplicação | 🔄 |
+| 6 | Consolidando conhecimentos | 🔄 |
 
 > Legenda: ✅ Concluído | 🔄 Em andamento | ⏳ Pendente
 
